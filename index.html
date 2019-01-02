@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Welcome</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">Welcome </a></h1>
+                <nav><ul>
+                    <li><a href="/category/notes.html">Notes</a></li>
+                    <li><a href="/category/tutorial.html">Tutorial</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/kaggle-docker-image-with-pycharm.html">kaggle docker image with pycharm</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2017-11-23T02:20:00+00:00">
+                Published: Thu 23 November 2017
+        </abbr>
+		<br />
+        <abbr class="modified" title="2017-11-23T02:30:00+00:00">
+                Updated: Thu 23 November 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/yang.html">Yang</a>
+        </address>
+<p>In <a href="/category/tutorial.html">Tutorial</a>.</p>
+<p>tags: <a href="/tag/python.html">python</a> <a href="/tag/pycharm.html">pycharm</a> <a href="/tag/docker.html">docker</a> </p>
+</footer><!-- /.post-info --><p>Build your machine learning env once for all. </p>
+<h2>docker setup</h2>
+<p>On Mac:</p>
+<ol>
+<li>install docker for mac</li>
+<li>pull kaggle/python image. <code>http://blog.kaggle.com/2016/02/05/how-to-get-started-with-data-science-in-containers/</code></li>
+</ol>
+<h2>pycharm setup</h2>
+<ol>
+<li>add remote env. <code>https://www.jetbrains.com/help/pycharm/configuring-remote-interpreters-via-docker.html</code></li>
+<li><strong>API URL</strong>: tcp://localhost:3375. (Took me tons of time to get this right). In the latest version, just leave certifs and excutable empty. You shall see prompt telling you that connection is sucessful</li>
+</ol>
+<p>All set. That's it.</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/jenkins-on-aws.html" rel="bookmark"
+                           title="Permalink to Jenkins on AWS">Jenkins on AWS</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-10-11T03:20:00+00:00">
+                Published: Wed 11 October 2017
+        </abbr>
+		<br />
+        <abbr class="modified" title="2017-10-11T03:20:00+00:00">
+                Updated: Wed 11 October 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/yang.html">Yang</a>
+        </address>
+<p>In <a href="/category/tutorial.html">Tutorial</a>.</p>
+<p>tags: <a href="/tag/aws.html">aws</a> <a href="/tag/jenkins.html">jenkins</a> </p>
+</footer><!-- /.post-info -->                <p>Use jenkins to deploy node.js server on AWS EC2</p>
+<h3>Begin</h3>
+<ul>
+<li>create instance</li>
+<li>ssh to instance</li>
+</ul>
+<h3>Install jenkins</h3>
+<div class="highlight"><pre><span></span>wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key <span class="p">|</span> sudo apt-key add -
+<span class="nb">echo</span> deb http://pkg.jenkins.io/debian-stable binary/ <span class="p">|</span> sudo tee /etc/apt/sources.list.d/jenkins.list
+sudo …</pre></div>
+                <a class="readmore" href="/jenkins-on-aws.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/floydhub-quickstart-tutorial.html" rel="bookmark"
+                           title="Permalink to FloydHub quickstart tutorial">FloydHub quickstart tutorial</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-04-15T02:20:00+00:00">
+                Published: Sat 15 April 2017
+        </abbr>
+		<br />
+        <abbr class="modified" title="2017-04-15T02:30:00+00:00">
+                Updated: Sat 15 April 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/yang.html">Yang</a>
+        </address>
+<p>In <a href="/category/tutorial.html">Tutorial</a>.</p>
+<p>tags: <a href="/tag/python.html">python</a> <a href="/tag/deep-learning.html">deep learning</a> <a href="/tag/floyd.html">floyd</a> </p>
+</footer><!-- /.post-info -->                <p>When you want to train your neuron nets but don't have Nvidia GPU,  you might then need to train it on cloud.  <a href="https://www.floydhub.com/">FloydHub </a>  is a relatively easy and cheap way to do this. Although the <a href="http://docs.floydhub.com/">document</a>  of FloydHub is already intuitive enough, I will go through the setup quickly here …</p>
+                <a class="readmore" href="/floydhub-quickstart-tutorial.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/useful-syntaxcommand.html" rel="bookmark"
+                           title="Permalink to Useful syntax/command">Useful syntax/command</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-04-14T19:20:00+00:00">
+                Published: Fri 14 April 2017
+        </abbr>
+		<br />
+        <abbr class="modified" title="2017-04-14T19:30:00+00:00">
+                Updated: Fri 14 April 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/yang.html">Yang</a>
+        </address>
+<p>In <a href="/category/notes.html">Notes</a>.</p>
+<p>tags: <a href="/tag/python.html">python</a> <a href="/tag/jupyter.html">jupyter</a> </p>
+</footer><!-- /.post-info -->                <h3>jupyter notebook</h3>
+<p>display multiple outputs</p>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.core.interactiveshell</span> <span class="kn">import</span> <span class="n">InteractiveShell</span>
+<span class="n">InteractiveShell</span><span class="o">.</span><span class="n">ast_node_interactivity</span> <span class="o">=</span> <span class="s2">&quot;all&quot;</span>
+</pre></div>
+
+
+<p>cell with larger width</p>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;style&gt;.container { width:90% !important; }&lt;/style&gt;&quot;</span><span class="p">))</span>
+</pre></div>
+                <a class="readmore" href="/useful-syntaxcommand.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

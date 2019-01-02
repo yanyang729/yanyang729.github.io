@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Welcome - floyd</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">Welcome </a></h1>
+                <nav><ul>
+                    <li><a href="/category/notes.html">Notes</a></li>
+                    <li><a href="/category/tutorial.html">Tutorial</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/floydhub-quickstart-tutorial.html">FloydHub quickstart tutorial</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2017-04-15T02:20:00+00:00">
+                Published: Sat 15 April 2017
+        </abbr>
+		<br />
+        <abbr class="modified" title="2017-04-15T02:30:00+00:00">
+                Updated: Sat 15 April 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/yang.html">Yang</a>
+        </address>
+<p>In <a href="/category/tutorial.html">Tutorial</a>.</p>
+<p>tags: <a href="/tag/python.html">python</a> <a href="/tag/deep-learning.html">deep learning</a> <a href="/tag/floyd.html">floyd</a> </p>
+</footer><!-- /.post-info --><p>When you want to train your neuron nets but don't have Nvidia GPU,  you might then need to train it on cloud.  <a href="https://www.floydhub.com/">FloydHub </a>  is a relatively easy and cheap way to do this. Although the <a href="http://docs.floydhub.com/">document</a>  of FloydHub is already intuitive enough, I will go through the setup quickly here to give you a more intuitive way of using FLoydHub.</p>
+<h3>Install floyd on your computer</h3>
+<hr>
+<p>After sign up, you will login into the Floyd console, you will see:</p>
+<p><img alt="" src="/images/floydconsole.png"></p>
+<p>Follow the 3 steps. <em>Notice: when you Copy and paste your authentication token in your terminal, you will not see it, so just <strong>copy and hit ENTER.</strong></em> </p>
+<h3>Upload your data</h3>
+<hr>
+<p>In most of cases, you will have a input directory where you put every data for your project. Below shows how to upload your data to FloydHub: </p>
+<ol>
+<li>Neviagte to your input folder, (which might contain several data files)</li>
+<li>Type <code>floyd data init [someRandomName]</code>in your terminal  to initialize</li>
+<li>Then type <code>floyd data upload</code> to upload data to your Floydhub</li>
+</ol>
+<p>Then you will see sth like:</p>
+<div class="highlight"><pre><span></span>$ floyd data upload
+Creating data source. Uploading files ...
+DATA ID                 NAME                          VERSION
+----------------------  -------------------------    ---------
+GY3QRFFUA8KpbnqvroTPPW  yourName/someRandomName:1            <span class="m">1</span>
+</pre></div>
+
+
+<p>Floyd will generate a data id for the uploaded dataset. This uploaded dataset can be used in your future experiments, which I will talk about it in the next part.</p>
+<h3><a href="http://docs.floydhub.com/commands/run/">Run your neuron net work </a></h3>
+<hr>
+<p>Now it's time to train your NN!</p>
+<ol>
+<li>Nevigate to the folder where your script lies(<code>train_cnn.py</code>) .   (which also might contain several files)</li>
+<li>Type <code>floyd init [randomProjectName]</code>in your terminal  to initialize</li>
+<li>In our case, where: <ol>
+<li>we want to use our own data and have already uploaded it. </li>
+<li>want to train on GPU </li>
+<li>want to run in a preinstalled environment with tensorflow-1.0  </li>
+</ol>
+</li>
+<li>We can just type <code>floyd run --gpu --data [changeItWithYourOwnDataidYouGotJustNow] --env tensorflow-1.0 "python train_cnn.py"</code></li>
+</ol>
+<p><img alt="" src="/images/runoptions.png"></p>
+<p>That's it! your neuron network will be trained on FloydHub now! Type <code>floyd logs [experimentId]</code> to see details(print,warning,error)</p>
+<p><strong>NOTICE:</strong>
+You must know that:</p>
+<p>When you <code>run</code> your project with  <code>--data [changeItWithYourOwnDataidYouGotJustNow]</code> . It means that the data will be available at the <code>/input</code> path. Eg.  </p>
+<div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/input/datafilename.csv&#39;</span><span class="p">)</span>
+</pre></div>
+
+
+<p><strong> So, make sure your path is right!</strong></p>
+<h3>Get the results</h3>
+<hr>
+<p>If succeed, you will get your output via this:</p>
+<p><img alt="" src="/images/floydoutput.png"></p>
+<p>Simply click Download button.</p>
+<h3>Lastly</h3>
+<hr>
+<p>FLoydHub provides every new user with 100h(45$ credit) access to a K80 GPU with 12G memory! That'll be enough for you to play with it.</p>
+<p>And this tutorial aims at giving you a snapshot of floyd, there are also many other applications(run jupyter notebook etc.), you might want to see the document.</p>                </article>
+            </aside><!-- /#featured -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

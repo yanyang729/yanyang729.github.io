@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Welcome - jenkins</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">Welcome </a></h1>
+                <nav><ul>
+                    <li><a href="/category/notes.html">Notes</a></li>
+                    <li><a href="/category/tutorial.html">Tutorial</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/jenkins-on-aws.html">Jenkins on AWS</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2017-10-11T03:20:00+00:00">
+                Published: Wed 11 October 2017
+        </abbr>
+		<br />
+        <abbr class="modified" title="2017-10-11T03:20:00+00:00">
+                Updated: Wed 11 October 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/yang.html">Yang</a>
+        </address>
+<p>In <a href="/category/tutorial.html">Tutorial</a>.</p>
+<p>tags: <a href="/tag/aws.html">aws</a> <a href="/tag/jenkins.html">jenkins</a> </p>
+</footer><!-- /.post-info --><p>Use jenkins to deploy node.js server on AWS EC2</p>
+<h3>Begin</h3>
+<ul>
+<li>create instance</li>
+<li>ssh to instance</li>
+</ul>
+<h3>Install jenkins</h3>
+<div class="highlight"><pre><span></span>wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key <span class="p">|</span> sudo apt-key add -
+<span class="nb">echo</span> deb http://pkg.jenkins.io/debian-stable binary/ <span class="p">|</span> sudo tee /etc/apt/sources.list.d/jenkins.list
+sudo apt-get update
+sudo apt-get install jenkins
+sudo systemctl start jenkins
+</pre></div>
+
+
+<h3>Login jenkins from local</h3>
+<p>In the AWS terminal window, we'll use the cat command to display the password:</p>
+<div class="highlight"><pre><span></span>sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+</pre></div>
+
+
+<h3>setting</h3>
+<p>build -&gt; execute shell</p>
+<p><a href="https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-16-04">reference</a></p>                </article>
+            </aside><!-- /#featured -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
