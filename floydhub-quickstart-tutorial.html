@@ -1,47 +1,111 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="utf-8" />
-        <title>FloydHub quickstart tutorial</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet/less" type="text/css" href="http://localhost:8000/theme/stylesheet/style.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js" type="text/javascript"></script>
+
+  <link rel="stylesheet" type="text/css" href="http://localhost:8000/theme/pygments/monokai.min.css">
+  <link rel="stylesheet" type="text/css" href="http://localhost:8000/theme/font-awesome/css/font-awesome.min.css">
+
+    <link href="http://localhost:8000/static/custom.css" rel="stylesheet">
+
+
+
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#333333">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#333333">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#333333">
+
+<meta name="author" content="Yang Yang" />
+<meta name="description" content="When you want to train your neuron nets but don&#39;t have Nvidia GPU, you might then need to train it on cloud. FloydHub is a relatively easy and cheap way to do this. Although the document of FloydHub is already intuitive enough, I will go through the setup quickly here …" />
+<meta name="keywords" content="python, deep learning, floyd">
+
+<meta property="og:site_name" content="Yang Yang's Blog"/>
+<meta property="og:title" content="FloydHub quickstart tutorial"/>
+<meta property="og:description" content="When you want to train your neuron nets but don&#39;t have Nvidia GPU, you might then need to train it on cloud. FloydHub is a relatively easy and cheap way to do this. Although the document of FloydHub is already intuitive enough, I will go through the setup quickly here …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="http://localhost:8000/floydhub-quickstart-tutorial.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2017-04-15 02:20:00-03:00"/>
+<meta property="article:modified_time" content="2017-04-15 02:30:00-03:00"/>
+<meta property="article:author" content="http://localhost:8000/author/yang-yang.html">
+<meta property="article:section" content="Tutorial"/>
+<meta property="article:tag" content="python"/>
+<meta property="article:tag" content="deep learning"/>
+<meta property="article:tag" content="floyd"/>
+<meta property="og:image" content="/images/profile.png">
+
+  <title>Yang Yang's Blog &ndash; FloydHub quickstart tutorial</title>
+
 </head>
+<body>
+  <aside>
+    <div>
+      <a href="http://localhost:8000">
+        <img src="/images/profile.png" alt="Yang Yang" title="Yang Yang">
+      </a>
+      <h1><a href="http://localhost:8000">Yang Yang</a></h1>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">Welcome </a></h1>
-                <nav><ul>
-                    <li><a href="/category/notes.html">Notes</a></li>
-                    <li class="active"><a href="/category/tutorial.html">Tutorial</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-<section id="content" class="body">
-  <article>
-    <header>
-      <h1 class="entry-title">
-        <a href="/floydhub-quickstart-tutorial.html" rel="bookmark"
-           title="Permalink to FloydHub quickstart tutorial">FloydHub quickstart tutorial</a></h1>
-    </header>
+<p>MS Candidate in Data Engineering | Data Science | Full-stack Development</p>
 
-    <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2017-04-15T02:20:00+00:00">
-                Published: Sat 15 April 2017
-        </abbr>
-		<br />
-        <abbr class="modified" title="2017-04-15T02:30:00+00:00">
-                Updated: Sat 15 April 2017
-        </abbr>
+      <ul class="social">
+        <li><a class="sc-linkedin" href="https://www.linkedin.com/in/yang-yang-105344aa/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="sc-github" href="https://github.com/yanyang729" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-twitter" href="https://twitter.com/yangyang729729" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      </ul>
+    </div>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/yang.html">Yang</a>
-        </address>
-<p>In <a href="/category/tutorial.html">Tutorial</a>.</p>
-<p>tags: <a href="/tag/python.html">python</a> <a href="/tag/deep-learning.html">deep learning</a> <a href="/tag/floyd.html">floyd</a> </p>
-</footer><!-- /.post-info -->      <p>When you want to train your neuron nets but don't have Nvidia GPU,  you might then need to train it on cloud.  <a href="https://www.floydhub.com/">FloydHub </a>  is a relatively easy and cheap way to do this. Although the <a href="http://docs.floydhub.com/">document</a>  of FloydHub is already intuitive enough, I will go through the setup quickly here to give you a more intuitive way of using FLoydHub.</p>
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="http://localhost:8000">Home</a>
+
+      <a href="/index.html">Home</a>
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="floydhub-quickstart-tutorial">FloydHub quickstart tutorial</h1>
+    <p>
+      Posted on April 15, 2017 in <a href="http://localhost:8000/category/tutorial.html">Tutorial</a>
+
+        &#8226; 2 min read
+    </p>
+  </header>
+
+
+  <div>
+    <p>When you want to train your neuron nets but don't have Nvidia GPU,  you might then need to train it on cloud.  <a href="https://www.floydhub.com/">FloydHub </a>  is a relatively easy and cheap way to do this. Although the <a href="http://docs.floydhub.com/">document</a>  of FloydHub is already intuitive enough, I will go through the setup quickly here to give you a more intuitive way of using FLoydHub.</p>
 <h3>Install floyd on your computer</h3>
 <hr>
 <p>After sign up, you will login into the Floyd console, you will see:</p>
-<p><img alt="" src="/images/floydconsole.png"></p>
+<p><img alt="" src="http://localhost:8000/images/floydconsole.png"></p>
 <p>Follow the 3 steps. <em>Notice: when you Copy and paste your authentication token in your terminal, you will not see it, so just <strong>copy and hit ENTER.</strong></em> </p>
 <h3>Upload your data</h3>
 <hr>
@@ -75,7 +139,7 @@ GY3QRFFUA8KpbnqvroTPPW  yourName/someRandomName:1            <span class="m">1</
 </li>
 <li>We can just type <code>floyd run --gpu --data [changeItWithYourOwnDataidYouGotJustNow] --env tensorflow-1.0 "python train_cnn.py"</code></li>
 </ol>
-<p><img alt="" src="/images/runoptions.png"></p>
+<p><img alt="" src="http://localhost:8000/images/runoptions.png"></p>
 <p>That's it! your neuron network will be trained on FloydHub now! Type <code>floyd logs [experimentId]</code> to see details(print,warning,error)</p>
 <p><strong>NOTICE:</strong>
 You must know that:</p>
@@ -88,43 +152,87 @@ You must know that:</p>
 <h3>Get the results</h3>
 <hr>
 <p>If succeed, you will get your output via this:</p>
-<p><img alt="" src="/images/floydoutput.png"></p>
+<p><img alt="" src="http://localhost:8000/images/floydoutput.png"></p>
 <p>Simply click Download button.</p>
 <h3>Lastly</h3>
 <hr>
 <p>FLoydHub provides every new user with 100h(45$ credit) access to a K80 GPU with 12G memory! That'll be enough for you to play with it.</p>
 <p>And this tutorial aims at giving you a snapshot of floyd, there are also many other applications(run jupyter notebook etc.), you might want to see the document.</p>
-    </div><!-- /.entry-content -->
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="http://localhost:8000/tag/python.html">python</a>
+      <a href="http://localhost:8000/tag/deep-learning.html">deep learning</a>
+      <a href="http://localhost:8000/tag/floyd.html">floyd</a>
+    </p>
+  </div>
 
-  </article>
-</section>
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
+  <div class="center social-share">
+    <p>Like this article? Share it with your friends!</p>
+    <div class="addthis_native_toolbox"></div>
+    <div class="addthis_sharing_toolbox"></div>
+    <div class="addthis_inline_share_toolbox"></div>
+  </div>
 
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+    <div class="addthis_relatedposts_inline"></div>
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+
+<!-- Disqus -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'yangyang729';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+    Please enable JavaScript to view comments.
+</noscript>
+<!-- End Disqus -->
+</article>
+
+    <footer>
+<p>
+  &copy;  2017 - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
+</p>
+<p>Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p><p>
+  <a rel="license"
+     href="http://creativecommons.org/licenses/by-sa/4.0/"
+     target="_blank">
+    <img alt="Creative Commons License"
+         title="Creative Commons License"
+         style="border-width:0"
+           src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"
+         width="80"
+         height="15"/>
+  </a>
+<!-- StatusCake -->
+<a href="https://www.statuscake.com" title="Yang Yang's Blog Uptime">
+  <img src="https://www.statuscake.com/App/button/index.php?Track=SL0UAgrsYP&amp;Days=7&amp;Design=6" alt="Yang Yang's Blog Uptime"/>
+</a>
+
+<script type="text/javascript">var SC_RumID = 6852;</script>
+<script type="text/javascript" async src="https://www.statuscake.com/App/RUM/embed.js"></script>
+<!-- End StatusCake --></p>    </footer>
+  </main>
+
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55adbb025d4f7e55" async="async"></script>
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Yang Yang's Blog ",
+  "url" : "http://localhost:8000",
+  "image": "/images/profile.png",
+  "description": ""
+}
+</script>
 
 </body>
 </html>

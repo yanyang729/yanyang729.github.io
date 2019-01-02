@@ -1,38 +1,99 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="utf-8" />
-        <title>Welcome</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet/less" type="text/css" href="http://localhost:8000/theme/stylesheet/style.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js" type="text/javascript"></script>
+
+  <link rel="stylesheet" type="text/css" href="http://localhost:8000/theme/pygments/monokai.min.css">
+  <link rel="stylesheet" type="text/css" href="http://localhost:8000/theme/font-awesome/css/font-awesome.min.css">
+
+    <link href="http://localhost:8000/static/custom.css" rel="stylesheet">
+
+
+
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#333333">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#333333">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#333333">
+
+    <meta name="author" content="Yang Yang" />
+    <meta name="description" content="" />
+<meta property="og:site_name" content="Yang Yang's Blog"/>
+<meta property="og:type" content="blog"/>
+<meta property="og:title" content="Yang Yang's Blog"/>
+<meta property="og:description" content=""/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="http://localhost:8000"/>
+<meta property="og:image" content="/images/profile.png">
+
+  <title>Yang Yang's Blog</title>
+
 </head>
+<body>
+  <aside>
+    <div>
+      <a href="http://localhost:8000">
+        <img src="/images/profile.png" alt="Yang Yang" title="Yang Yang">
+      </a>
+      <h1><a href="http://localhost:8000">Yang Yang</a></h1>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">Welcome </a></h1>
-                <nav><ul>
-                    <li><a href="/category/notes.html">Notes</a></li>
-                    <li><a href="/category/tutorial.html">Tutorial</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
+<p>MS Candidate in Data Engineering | Data Science | Full-stack Development</p>
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="/kaggle-docker-image-with-pycharm.html">kaggle docker image with pycharm</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2017-11-23T02:20:00+00:00">
-                Published: Thu 23 November 2017
-        </abbr>
-		<br />
-        <abbr class="modified" title="2017-11-23T02:30:00+00:00">
-                Updated: Thu 23 November 2017
-        </abbr>
+      <ul class="social">
+        <li><a class="sc-linkedin" href="https://www.linkedin.com/in/yang-yang-105344aa/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="sc-github" href="https://github.com/yanyang729" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-twitter" href="https://twitter.com/yangyang729729" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      </ul>
+    </div>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/yang.html">Yang</a>
-        </address>
-<p>In <a href="/category/tutorial.html">Tutorial</a>.</p>
-<p>tags: <a href="/tag/python.html">python</a> <a href="/tag/pycharm.html">pycharm</a> <a href="/tag/docker.html">docker</a> </p>
-</footer><!-- /.post-info --><p>Build your machine learning env once for all. </p>
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="http://localhost:8000">Home</a>
+
+      <a href="/index.html">Home</a>
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+
+    </nav>
+
+
+
+<article>
+  <header>
+    <h2><a href="http://localhost:8000/kaggle-docker-image-with-pycharm.html#kaggle-docker-image-with-pycharm">kaggle docker image with pycharm</a></h2>
+    <p>
+      Posted on November 23, 2017 in <a href="http://localhost:8000/category/tutorial.html">Tutorial</a>
+
+          &#8226; Tagged with
+              <a href="http://localhost:8000/tag/python.html">python</a>,              <a href="http://localhost:8000/tag/pycharm.html">pycharm</a>,              <a href="http://localhost:8000/tag/docker.html">docker</a>
+        &#8226; 1 min read
+    </p>
+  </header>
+  <div>
+      <p>Build your machine learning env once for all. </p>
 <h2>docker setup</h2>
 <p>On Mac:</p>
 <ol>
@@ -42,37 +103,25 @@
 <h2>pycharm setup</h2>
 <ol>
 <li>add remote env. <code>https://www.jetbrains.com/help/pycharm/configuring-remote-interpreters-via-docker.html</code></li>
-<li><strong>API URL</strong>: tcp://localhost:3375. (Took me tons of time to get this right). In the latest version, just leave certifs and excutable empty. You shall see prompt telling you that connection is sucessful</li>
-</ol>
-<p>All set. That's it.</p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
+<li><strong>API URL</strong>: tcp://localhost:3375. (Took me tons of …</li></ol>
+      <br>
+      <a class="btn" href="http://localhost:8000/kaggle-docker-image-with-pycharm.html#kaggle-docker-image-with-pycharm">Continue reading</a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="http://localhost:8000/jenkins-on-aws.html#jenkins-on-aws">Jenkins on AWS</a></h2>
+    <p>
+      Posted on October 11, 2017 in <a href="http://localhost:8000/category/tutorial.html">Tutorial</a>
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/jenkins-on-aws.html" rel="bookmark"
-                           title="Permalink to Jenkins on AWS">Jenkins on AWS</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2017-10-11T03:20:00+00:00">
-                Published: Wed 11 October 2017
-        </abbr>
-		<br />
-        <abbr class="modified" title="2017-10-11T03:20:00+00:00">
-                Updated: Wed 11 October 2017
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/yang.html">Yang</a>
-        </address>
-<p>In <a href="/category/tutorial.html">Tutorial</a>.</p>
-<p>tags: <a href="/tag/aws.html">aws</a> <a href="/tag/jenkins.html">jenkins</a> </p>
-</footer><!-- /.post-info -->                <p>Use jenkins to deploy node.js server on AWS EC2</p>
+          &#8226; Tagged with
+              <a href="http://localhost:8000/tag/aws.html">aws</a>,              <a href="http://localhost:8000/tag/jenkins.html">jenkins</a>
+        &#8226; 1 min read
+    </p>
+  </header>
+  <div>
+      <p>Use jenkins to deploy node.js server on AWS EC2</p>
 <h3>Begin</h3>
 <ul>
 <li>create instance</li>
@@ -82,58 +131,42 @@
 <div class="highlight"><pre><span></span>wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key <span class="p">|</span> sudo apt-key add -
 <span class="nb">echo</span> deb http://pkg.jenkins.io/debian-stable binary/ <span class="p">|</span> sudo tee /etc/apt/sources.list.d/jenkins.list
 sudo …</pre></div>
-                <a class="readmore" href="/jenkins-on-aws.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
+      <br>
+      <a class="btn" href="http://localhost:8000/jenkins-on-aws.html#jenkins-on-aws">Continue reading</a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="http://localhost:8000/floydhub-quickstart-tutorial.html#floydhub-quickstart-tutorial">FloydHub quickstart tutorial</a></h2>
+    <p>
+      Posted on April 15, 2017 in <a href="http://localhost:8000/category/tutorial.html">Tutorial</a>
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/floydhub-quickstart-tutorial.html" rel="bookmark"
-                           title="Permalink to FloydHub quickstart tutorial">FloydHub quickstart tutorial</a></h1>
-                </header>
+          &#8226; Tagged with
+              <a href="http://localhost:8000/tag/python.html">python</a>,              <a href="http://localhost:8000/tag/deep-learning.html">deep learning</a>,              <a href="http://localhost:8000/tag/floyd.html">floyd</a>
+        &#8226; 2 min read
+    </p>
+  </header>
+  <div>
+      <p>When you want to train your neuron nets but don't have Nvidia GPU,  you might then need to train it on cloud.  <a href="https://www.floydhub.com/">FloydHub </a>  is a relatively easy and cheap way to do this. Although the <a href="http://docs.floydhub.com/">document</a>  of FloydHub is already intuitive enough, I will go through the setup quickly here …</p>
+      <br>
+      <a class="btn" href="http://localhost:8000/floydhub-quickstart-tutorial.html#floydhub-quickstart-tutorial">Continue reading</a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="http://localhost:8000/useful-syntaxcommand.html#useful-syntaxcommand">Useful syntax/command</a></h2>
+    <p>
+      Posted on April 14, 2017 in <a href="http://localhost:8000/category/notes.html">Notes</a>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2017-04-15T02:20:00+00:00">
-                Published: Sat 15 April 2017
-        </abbr>
-		<br />
-        <abbr class="modified" title="2017-04-15T02:30:00+00:00">
-                Updated: Sat 15 April 2017
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/yang.html">Yang</a>
-        </address>
-<p>In <a href="/category/tutorial.html">Tutorial</a>.</p>
-<p>tags: <a href="/tag/python.html">python</a> <a href="/tag/deep-learning.html">deep learning</a> <a href="/tag/floyd.html">floyd</a> </p>
-</footer><!-- /.post-info -->                <p>When you want to train your neuron nets but don't have Nvidia GPU,  you might then need to train it on cloud.  <a href="https://www.floydhub.com/">FloydHub </a>  is a relatively easy and cheap way to do this. Although the <a href="http://docs.floydhub.com/">document</a>  of FloydHub is already intuitive enough, I will go through the setup quickly here …</p>
-                <a class="readmore" href="/floydhub-quickstart-tutorial.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/useful-syntaxcommand.html" rel="bookmark"
-                           title="Permalink to Useful syntax/command">Useful syntax/command</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2017-04-14T19:20:00+00:00">
-                Published: Fri 14 April 2017
-        </abbr>
-		<br />
-        <abbr class="modified" title="2017-04-14T19:30:00+00:00">
-                Updated: Fri 14 April 2017
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/yang.html">Yang</a>
-        </address>
-<p>In <a href="/category/notes.html">Notes</a>.</p>
-<p>tags: <a href="/tag/python.html">python</a> <a href="/tag/jupyter.html">jupyter</a> </p>
-</footer><!-- /.post-info -->                <h3>jupyter notebook</h3>
+          &#8226; Tagged with
+              <a href="http://localhost:8000/tag/python.html">python</a>,              <a href="http://localhost:8000/tag/jupyter.html">jupyter</a>
+        &#8226; 1 min read
+    </p>
+  </header>
+  <div>
+      <h3>jupyter notebook</h3>
 <p>display multiple outputs</p>
 <div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.core.interactiveshell</span> <span class="kn">import</span> <span class="n">InteractiveShell</span>
 <span class="n">InteractiveShell</span><span class="o">.</span><span class="n">ast_node_interactivity</span> <span class="o">=</span> <span class="s2">&quot;all&quot;</span>
@@ -144,38 +177,56 @@ sudo …</pre></div>
 <div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;style&gt;.container { width:90% !important; }&lt;/style&gt;&quot;</span><span class="p">))</span>
 </pre></div>
-                <a class="readmore" href="/useful-syntaxcommand.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-                </ol><!-- /#posts-list -->
-                </section><!-- /#content -->
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
+      <br>
+      <a class="btn" href="http://localhost:8000/useful-syntaxcommand.html#useful-syntaxcommand">Continue reading</a>
+  </div>
+</article>
 
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+  <div class="pagination">
+  </div>
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+
+
+    <footer>
+<p>
+  &copy;  2017 - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
+</p>
+<p>Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p><p>
+  <a rel="license"
+     href="http://creativecommons.org/licenses/by-sa/4.0/"
+     target="_blank">
+    <img alt="Creative Commons License"
+         title="Creative Commons License"
+         style="border-width:0"
+           src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"
+         width="80"
+         height="15"/>
+  </a>
+<!-- StatusCake -->
+<a href="https://www.statuscake.com" title="Yang Yang's Blog Uptime">
+  <img src="https://www.statuscake.com/App/button/index.php?Track=SL0UAgrsYP&amp;Days=7&amp;Design=6" alt="Yang Yang's Blog Uptime"/>
+</a>
+
+<script type="text/javascript">var SC_RumID = 6852;</script>
+<script type="text/javascript" async src="https://www.statuscake.com/App/RUM/embed.js"></script>
+<!-- End StatusCake --></p>    </footer>
+  </main>
+
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55adbb025d4f7e55" async="async"></script>
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Yang Yang's Blog ",
+  "url" : "http://localhost:8000",
+  "image": "/images/profile.png",
+  "description": ""
+}
+</script>
 
 </body>
 </html>
