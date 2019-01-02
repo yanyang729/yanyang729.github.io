@@ -4,133 +4,133 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>http://localhost:8000/</loc>
-<lastmod>2019-01-03T04:12:13-00:00</lastmod>
+<loc>/</loc>
+<lastmod>2019-01-03T04:20:23-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/archives.html</loc>
-<lastmod>2019-01-03T04:12:13-00:00</lastmod>
+<loc>/archives.html</loc>
+<lastmod>2019-01-03T04:20:23-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tags.html</loc>
-<lastmod>2019-01-03T04:12:13-00:00</lastmod>
+<loc>/tags.html</loc>
+<lastmod>2019-01-03T04:20:23-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/categories.html</loc>
-<lastmod>2019-01-03T04:12:13-00:00</lastmod>
+<loc>/categories.html</loc>
+<lastmod>2019-01-03T04:20:23-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/kaggle-docker-image-with-pycharm.html</loc>
+<loc>/kaggle-docker-image-with-pycharm.html</loc>
 <lastmod>2017-11-23T02:30:00-04:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/jenkins-on-aws.html</loc>
+<loc>/jenkins-on-aws.html</loc>
 <lastmod>2017-10-11T03:20:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/floydhub-quickstart-tutorial.html</loc>
+<loc>/floydhub-quickstart-tutorial.html</loc>
 <lastmod>2017-04-15T02:30:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/useful-syntaxcommand.html</loc>
+<loc>/useful-syntaxcommand.html</loc>
 <lastmod>2017-04-14T19:30:00-03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/category/notes.html</loc>
+<loc>/category/notes.html</loc>
 <lastmod>2017-04-14T19:30:00-04:14</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/category/tutorial.html</loc>
+<loc>/category/tutorial.html</loc>
 <lastmod>2017-11-23T02:30:00-04:14</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/python.html</loc>
+<loc>/tag/python.html</loc>
 <lastmod>2017-11-23T02:30:00-04:14</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/pycharm.html</loc>
+<loc>/tag/pycharm.html</loc>
 <lastmod>2017-11-23T02:30:00-04:14</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/docker.html</loc>
+<loc>/tag/docker.html</loc>
 <lastmod>2017-11-23T02:30:00-04:14</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/aws.html</loc>
+<loc>/tag/aws.html</loc>
 <lastmod>2017-10-11T03:20:00-04:14</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/jenkins.html</loc>
+<loc>/tag/jenkins.html</loc>
 <lastmod>2017-10-11T03:20:00-04:14</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/deep-learning.html</loc>
+<loc>/tag/deep-learning.html</loc>
 <lastmod>2017-04-15T02:30:00-04:14</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/floyd.html</loc>
+<loc>/tag/floyd.html</loc>
 <lastmod>2017-04-15T02:30:00-04:14</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/jupyter.html</loc>
+<loc>/tag/jupyter.html</loc>
 <lastmod>2017-04-14T19:30:00-04:14</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/author/yang-yang.html</loc>
+<loc>/author/yang-yang.html</loc>
 <lastmod>2017-11-23T02:30:00-04:14</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
